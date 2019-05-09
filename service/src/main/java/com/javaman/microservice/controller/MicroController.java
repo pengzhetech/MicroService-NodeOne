@@ -1,5 +1,6 @@
 package com.javaman.microservice.controller;
 
+import com.javaman.microservice.service.ApiService;
 import com.javaman.microservice.service.MicroSerice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,9 +20,17 @@ public class MicroController {
     @Autowired
     private MicroSerice microSerice;
 
+    @Autowired
+    private ApiService apiService;
+
     @GetMapping("/test")
     public String test() {
       return   microSerice.microService("哲哥");
+    }
+
+    @GetMapping("/invoke")
+    public String invoke() {
+        return apiService.microService();
     }
 
 }
