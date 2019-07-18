@@ -25,11 +25,12 @@ public class MicroController {
 
     @GetMapping("/test")
     public String test() {
-      return   microSerice.microService("哲哥");
+        return microSerice.microService("哲哥");
     }
 
     @GetMapping("/invoke")
     public String invoke() {
+        System.out.println("-------interface was invoked-------");
         return apiService.microService();
     }
 
