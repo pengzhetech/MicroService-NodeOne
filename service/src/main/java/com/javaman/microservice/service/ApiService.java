@@ -1,7 +1,7 @@
 package com.javaman.microservice.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.javaman.microservice.api.service.MicroService;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Service;
 
 /**
