@@ -18,11 +18,13 @@ public class ConsumerConfiguration {
     private String protocolName;
     @Value("${dubbo.protocol.port}")
     private int protocolPort;
+    @Value("${application.name}")
+    private String applicationName;
 
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("dubbo-annotation-consumer");
+        applicationConfig.setName(applicationName);
         return applicationConfig;
     }
 

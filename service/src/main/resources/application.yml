@@ -1,5 +1,7 @@
 server:
   port: 7777
+application:
+  name: pengzhetechconsumer
 dubbo:
   registry:
     address: nacos://11.239.163.65:8848
