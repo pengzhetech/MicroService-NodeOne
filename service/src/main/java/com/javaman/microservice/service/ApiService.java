@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ApiService {
 
-    @Reference(version = "${dubbo.service.version}")
+    @Reference(version = "${dubbo.service.version}", group = "service1")
     private MicroService microSerice;
 
     public String microService() {

@@ -6,7 +6,7 @@ dubbo:
     qosEnable: true
     qosAcceptForeignIp: true
   registry:
-    address: zookeeper://47.106.238.98:2181
+    address: nacos://11.239.163.65:8848
   service:
     version: 1.0.0
   protocol:
