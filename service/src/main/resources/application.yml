@@ -1,10 +1,6 @@
 server:
   port: 7777
 dubbo:
-  application:
-    name: dubbo-comsumer
-    qosEnable: true
-    qosAcceptForeignIp: true
   registry:
     address: nacos://11.239.163.65:8848
   service:
